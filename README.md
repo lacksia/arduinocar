@@ -28,25 +28,24 @@ void loop() {
 
   if (Serial.available()) {
   
-    char b[2];  //pitch b[0], roll b[1]
+   char b[2];  //pitch b[0], roll b[1]
     
-    int p, r;
+   int p, r;
     
-    Serial.readBytes(b, 2);
+   Serial.readBytes(b, 2);
     
-    p = b[0] * 3; // 피치값 -90~0~90, 전 후진  // 1500-270 ~ 1500+270
+   p = b[0] * 3; // 피치값 -90~0~90, 전 후진  // 1500-270 ~ 1500+270
     
-    r = b[1];        // 롤 값 -90~0~90, 좌 우회전  // 1500-90 ~ 1500+90
+   r = b[1];        // 롤 값 -90~0~90, 좌 우회전  // 1500-90 ~ 1500+90
     
-    sr.write(1500 + p - r);
+   sr.write(1500 + p - r);
     
-    sl.write(1500 - p - r);
+   sl.write(1500 - p - r);
     
-    Serial.write('1');
-    
+   Serial.write('1');
+   
+      }
   }
-  
-}
 
 4.블루투스 페어링
 
