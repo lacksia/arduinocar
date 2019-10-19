@@ -44,7 +44,7 @@ void loop() {
     
    Serial.write('1');
    
-      }
+     }
   }
 
 4.블루투스 페어링
