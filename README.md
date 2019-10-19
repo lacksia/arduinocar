@@ -10,8 +10,6 @@ https://user-images.githubusercontent.com/50895677/67139097-0a5ec300-f287-11e9-8
 
 조종앱 휴대폰에 다운로드
 
-블루투스 페어링
-
 아두이노 코딩
 
 #include <Servo.h>
@@ -50,4 +48,5 @@ void loop() {
   
 }
 
+블루투스 페어링
 
